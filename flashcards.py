@@ -22,13 +22,13 @@ flash_cards = {
     '是的': {'frequency': 1, 'pinyin': 'shìde', 'example': '是的，我明白了。', 'translation': 'Yes, I understand.'},  # 'Yes'
     '不是': {'frequency': 1, 'pinyin': 'bùshì', 'example': '不是，我不同意。', 'translation': 'No, I do not agree.'},  # 'No'
     '可以': {'frequency': 1, 'pinyin': 'kěyǐ', 'example': '可以，我同意。', 'translation': 'Okay, I agree.'},  # 'Okay'
-    '他': {'frequency': 1, 'pinyin': 'tā', 'example': '他是我的朋友。', 'translation': 'He is my friend.'},
-    '她': {'frequency': 1, 'pinyin': 'tā', 'example': '她是我的妹妹。', 'translation': 'She is my sister.'},
-    '它': {'frequency': 1, 'pinyin': 'tā', 'example': '它是我的狗。', 'translation': 'It is my dog.'},
-    '这': {'frequency': 1, 'pinyin': 'zhè', 'example': '这是我的书。', 'translation': 'This is my book.'},
-    '那': {'frequency': 1, 'pinyin': 'nà', 'example': '那是我的车。', 'translation': 'That is my car.'},
-    '哪': {'frequency': 1, 'pinyin': 'nǎ', 'example': '哪是我的笔？', 'translation': 'Which is my pen?'},
-    '人': {'frequency': 1, 'pinyin': 'rén', 'example': '他是一个好人。', 'translation': 'He is a good person.'},
+    '他': {'frequency': 1, 'pinyin': 'tā', 'example': '他是我的朋友。', 'translation': 'He is my friend.'}, # 'He'
+    '她': {'frequency': 1, 'pinyin': 'tā', 'example': '她是我的妹妹。', 'translation': 'She is my sister.'}, # 'She'
+    '它': {'frequency': 1, 'pinyin': 'tā', 'example': '它是我的狗。', 'translation': 'It is my dog.'}, # 'It'
+    '这': {'frequency': 1, 'pinyin': 'zhè', 'example': '这是我的书。', 'translation': 'This is my book.'}, # 'This'
+    '那': {'frequency': 1, 'pinyin': 'nà', 'example': '那是我的车。', 'translation': 'That is my car.'}, # 'That'
+    '哪': {'frequency': 1, 'pinyin': 'nǎ', 'example': '哪是我的笔？', 'translation': 'Which is my pen?'}, # 'Which'
+    '人': {'frequency': 1, 'pinyin': 'rén', 'example': '他是一个好人。', 'translation': 'He is a good person.'}, # 'Person'
     '年': {'frequency': 1, 'pinyin': 'nián', 'example': '我今年二十岁。', 'translation': 'I am twenty years old this year.'},
     '大': {'frequency': 1, 'pinyin': 'dà', 'example': '这是一个大苹果。', 'translation': 'This is a big apple.'},
     '小': {'frequency': 1, 'pinyin': 'xiǎo', 'example': '这是一个小苹果。', 'translation': 'This is a small apple.'},
@@ -73,6 +73,7 @@ flash_cards = {
     '晚': {'frequency': 4, 'pinyin': 'wǎn', 'example': '晚上好。', 'translation': 'Good evening.'},
     '开': {'frequency': 4, 'pinyin': 'kāi', 'example': '开门。', 'translation': 'Open the door.'},
     '关': {'frequency': 4, 'pinyin': 'guān', 'example': '关窗。', 'translation': 'Close the window.'},
+    '进': {'frequency': 4, 'pinyin': 'jìn', 'example': '进来。', 'translation': 'Come in.'},
     
     # Add more words/phrases here...
     
