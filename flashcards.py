@@ -97,14 +97,14 @@ while True:
     #increment the counter
     counter += 1
 
-   # Display the character/phrase, pinyin, example, and translation
-    print("="*50+"\n")
+    # Display the character/phrase, pinyin, example, and translation
+    print("=" * 50)
+    print(f"Flashcard #{counter}")
     print(f"Character/Phrase: {flash_card}")
-    print(f"Pinyin:          : {card_details['pinyin']}")
-    print(f"Example:         : {card_details['example']}")
-    print(f"Translation:     : {card_details['translation']}")
-    print("="*50+"\n")
+    print(f"Pinyin          : {card_details['pinyin']}")
+    print(f"Example         : {card_details['example']}")
+    print(f"Translation     : {card_details['translation']}")
+    print("=" * 50 + "\n")
 
     # Wait for the user to press a key to continue
-
     input("Press enter to continue...")
