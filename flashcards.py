@@ -1,6 +1,6 @@
 import random
 import time
-from data import data
+from dictionaries.updated_data import data
 
 
 # # Define the dictionary of Mandarin characters/phrases, their frequencies, pinyin pronunciations, and examples of usage
@@ -85,6 +85,7 @@ flash_cards = {list(item.keys())[0]: list(item.values())[0] for item in data}
 # Generate a list of characters based on their frequency
 characters = [char for char, details in flash_cards.items() for _ in range(details['frequency'])]
 
+# Initialize the counter
 counter = 0
 
 while True:
@@ -94,17 +95,20 @@ while True:
     # Extract details from the dictionary
     card_details = flash_cards[flash_card]
 
-    #increment the counter
+    # Increment the counter
     counter += 1
 
-    # Display the character/phrase, pinyin, example, and translation
+    # Display the character/phrase, pinyin, example, translation, example translation, and usage notes
     print("=" * 50)
     print(f"Flashcard #{counter}")
-    print(f"Character/Phrase: {flash_card}")
-    print(f"Pinyin          : {card_details['pinyin']}")
-    print(f"Example         : {card_details['example']}")
-    print(f"Translation     : {card_details['translation']}")
+    print(f"Character/Phrase  : {flash_card}")
+    print(f"Pinyin            : {card_details['pinyin']}")
+    print(f"Translation       : {card_details['translation']}")
+    print(f"Example           : {card_details['example']}")
+    print(f"Example Translation: {card_details['example_translation']}")
+    print(f"Usage Notes       : {card_details['usage_notes']}")
     print("=" * 50 + "\n")
 
     # Wait for the user to press a key to continue
     input("Press enter to continue...")
+    
