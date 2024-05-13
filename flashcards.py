@@ -1,6 +1,6 @@
 import random
 import time
-from flash_cards_data import flash_cards
+from data import data
 
 
 # # Define the dictionary of Mandarin characters/phrases, their frequencies, pinyin pronunciations, and examples of usage
@@ -79,18 +79,32 @@ from flash_cards_data import flash_cards
     
 # }
 
-# Create the list of Mandarin characters/phrases
-characters = [char for char, freq in flash_cards.items() for _ in range(freq['frequency'])]
+# Flatten the list of dictionaries to a single dictionary
+flash_cards = {list(item.keys())[0]: list(item.values())[0] for item in data}
+
+# Generate a list of characters based on their frequency
+characters = [char for char, details in flash_cards.items() for _ in range(details['frequency'])]
+
+counter = 0
 
 while True:
     # Randomly select a character/phrase
     flash_card = random.choice(characters)
 
-    # Display the character/phrase, pinyin, example and translation
-    print(f"Character/Phrase: {flash_card}")
-    print(f"Pinyin: {flash_cards[flash_card]['pinyin']}")
-    print(f"Example: {flash_cards[flash_card]['example']}")
-    print(f"Translation: {flash_cards[flash_card]['translation']}")
+    # Extract details from the dictionary
+    card_details = flash_cards[flash_card]
 
-    # Wait for the user to press a key
+    #increment the counter
+    counter += 1
+
+   # Display the character/phrase, pinyin, example, and translation
+    print("="*50+"\n")
+    print(f"Character/Phrase: {flash_card}")
+    print(f"Pinyin:          : {card_details['pinyin']}")
+    print(f"Example:         : {card_details['example']}")
+    print(f"Translation:     : {card_details['translation']}")
+    print("="*50+"\n")
+
+    # Wait for the user to press a key to continue
+
     input("Press enter to continue...")
