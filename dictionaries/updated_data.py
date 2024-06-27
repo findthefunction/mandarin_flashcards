@@ -41,7 +41,6 @@ data = [
     {'学习': {'frequency': 5, 'pinyin': 'xuéxí', 'translation': 'Study', 'example': '我在学习汉语。', 'example_translation': 'I am studying Chinese.', 'usage_notes': 'Used to refer to learning or studying something.'}}
 ]
 
-
 data.extend([
     {'家': {'frequency': 6, 'pinyin': 'jiā', 'translation': 'Home', 'example': '我回家了。', 'example_translation': 'I went home.', 'usage_notes': 'Refers to one’s place of residence.'}},
     {'学校': {'frequency': 6, 'pinyin': 'xuéxiào', 'translation': 'School', 'example': '我在学校学习。', 'example_translation': 'I study at school.', 'usage_notes': 'Refers to an educational institution.'}},
